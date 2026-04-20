@@ -11,193 +11,153 @@
             color: white;
             margin: 0;
             padding: 0;
-
         }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--dark-bg);
-            color: white;
-            margin: 0;
-            line-height: 1.6;
-        }
-
-        /* Moderná Navigácia */
+        /* Navigácia */
         nav {
-            background: rgba(10, 10, 10, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 20px;
+            background-color: #0f0f0f;
+            padding: 15px;
             text-align: center;
             position: sticky;
             top: 0;
+            border-bottom: 1px solid #333;
             z-index: 1000;
-            border-bottom: 2px solid var(--primary-red);
         }
 
         nav a {
-            color: white;
+            color: #aaa;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            margin: 0 20px;
+            font-weight: bold;
             transition: 0.3s;
         }
 
         nav a:hover {
-            color: var(--primary-red);
-            text-shadow: 0 0 10px var(--primary-red);
+            color: white;
         }
 
         /* Sekcie */
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
         .section {
-            padding: 80px 0;
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
             text-align: center;
         }
 
-        /* Domov s neónovým efektom */
-        .profile-header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-            background: linear-gradient(to right, #fff, #ff0000);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        /* Domov - Podľa tvojho YouTube */
+        .profile-pic {
+            width: 150px;
+            border-radius: 50%;
+            border: 3px solid #ff0000;
         }
 
         .sub-button {
-            background-color: var(--primary-red);
+            background-color: #f00;
             color: white;
-            padding: 18px 40px;
+            padding: 12px 25px;
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: 800;
-            font-size: 1.1rem;
+            border-radius: 20px;
+            font-weight: bold;
             display: inline-block;
-            margin-top: 30px;
-            box-shadow: 0 5px 20px rgba(255, 0, 0, 0.4);
-            transition: 0.4s ease;
-            text-transform: uppercase;
+            margin-top: 20px;
+            transition: transform 0.2s;
         }
 
         .sub-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.6);
-            background-color: #e60000;
+            background-color: #cc0000;
+            transform: scale(1.05);
         }
 
-        /* Karty v sekciách */
-        .card {
-            background: var(--card-bg);
-            border: 1px solid #222;
-            padding: 30px;
-            border-radius: 20px;
-            margin-top: 30px;
-            transition: 0.3s;
+        /* Informácie o videách */
+        .video-box {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
         }
 
-        .card:hover {
-            border-color: var(--primary-red);
-        }
-
-        /* PC Boost styling */
-        .boost-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
-
-        .boost-item {
-            background: #111;
-            padding: 25px;
-            border-radius: 15px;
-            border-bottom: 4px solid #333;
+        /* PC Boost sekcia */
+        .boost-card {
+            background: linear-gradient(145deg, #1e1e1e, #252525);
+            padding: 20px;
+            border-radius: 10px;
             text-align: left;
-            transition: 0.3s;
+            margin-bottom: 15px;
+            border-left: 5px solid #00c8ff;
         }
 
-        .boost-item:hover {
-            border-bottom-color: var(--primary-red);
-            transform: scale(1.02);
-        }
-
-        .boost-item h3 {
-            color: var(--primary-red);
-            margin-top: 0;
-        }
-
-        /* Responzivita */
-        @media (max-width: 600px) {
-            .profile-header h1 { font-size: 2.5rem; }
-        }
+        hr { border: 0.5px solid #333; margin: 40px 0; }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="#domov">Domov</a>
-        <a href="#video">Novinky</a>
-        <a href="#boost">PC Boost</a>
+        <a href="#domov">DOMOV</a>
+        <a href="#info">INFORMÁCIE</a>
+        <a href="#boost">PC BOOST</a>
     </nav>
 
-    <div class="container">
-        <section id="domov" class="section profile-header">
-            <h1>LUKASSS895</h1>
-            <p style="color: var(--text-gray); font-size: 1.2rem;">Gaming & Tech Content Creator</p>
-            <p>Čaute všetci! Na mojom kanále nájdete hlavne CS:GO, hororovky a kopec zábavy. Pridaj sa k našej komunite!</p>
-            
-            <a href="https://www.youtube.com/@Lukasss895?sub_confirmation=1" class="sub-button" target="_blank">
-                Daj Odber Dik :)
-            </a>
-        </section>
+    <script src="https://apis.google.com/js/platform.js"></script>
 
-        <section id="video" class="section">
-            <h2 style="font-size: 2rem;">Kedy vyjde video?</h2>
-            <div class="card">
-                <p>Pracujem na niečom veľkom! Sleduj môj YouTube, aby ti nič neušlo.</p>
-                <div style="margin-top: 25px;">
-                    <a href="TU_VLOZ_ODKAZ_NA_VIDEO" style="color: var(--primary-red); font-weight: bold; text-decoration: none; font-size: 1.1rem;" target="_blank">
-                        ▶ POZRIEŤ POSLEDNÉ VIDEO
-                    </a>
-                </div>
-            </div>
-        </section>
+ <section id="domov" class="section">
+        <h1>Lukasss895</h1>
+        <p>@Lukasss895 • 43 odberateľov</p>
+        <p>Čaute všetci volám sa Lukáš. Môžete na mojom kanále nájsť hlavne CS:GO, Hororové hry a veľa ďalšieho!</p>
+        
+        <a href="https://www.youtube.com/@Lukasss895?sub_confirmation=1" class="sub-button" target="_blank">
+            ODOBERAŤ (Sub)
+</div>
+        
+        </a>
+    </section>
 
-        <section id="boost" class="section">
-            <h2 style="font-size: 2rem;">Optimalizácia pre tvoj stroj</h2>
-            <div class="boost-grid">
-                <div class="boost-item">
-                    <h3>01. Výkon</h3>
-                    <p>Nastav si v napájaní Windows "Vysoký výkon" pre maximálnu stabilitu FPS.</p>
-                </div>
-                <div class="boost-item">
-                    <h3>02. Temp súbory</h3>
-                    <p>Cez Win+R a %temp% vymaž nepotrebný odpad, ktorý spomaľuje tvoj disk.</p>
-                </div>
-                <div class="boost-item">
-                    <h3>03. Game Mode</h3>
-                    <p>Zapni Herný režim vo Windowse, aby systém uprednostnil hru pred pozadím.</p>
-                </div>
-                <div class="boost-item">
-                    <h3>04. Ovládače</h3>
-                    <p>Aktualizuj GPU cez NVIDIA App alebo AMD Software pre opravu chýb.</p>
-                </div>
-                <div class="boost-item">
-                    <h3>05. Optimalizácia</h3>
-                    <p>V nastaveniach grafiky v NVIDIA/AMD aplikácii si nechaj hru optimalizovať na výkon.</p>
-                </div>
-            </div>
-        </section>
-    </div>
+    <hr>
 
-    <footer style="text-align: center; padding: 60px 20px; color: #444; font-size: 0.9rem; border-top: 1px solid #111;">
-        &copy; 2026 Lukasss895. Vytvorené pre komunitu 😊
+    <section id="info" class="section">
+        <h2>Kedy vyjde nové video?</h2>
+        <div class="video-box">
+            <p>Aktuálne ešte neni žiadne nové videjko ale nebojte sa výjde čoskoro tak zatiaľ kukni najnovšie na kanály! Sledujte môj YouTube pre novinky.</p>
+            <p><strong>Najnovšie video:</strong></p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/https://www.youtube.com/watch?v=Od5LNH5uc7c" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="boost" class="section">
+        <h2>Boost pre tvoj PC / Notebook</h2>
+        <p>Tieto tipy ti pomôžu získať viac FPS v hrách:</p>
+        
+       <section id="boost" class="section">
+        <h2>Boost pre tvoj PC / Notebook</h2>
+        <p>Tieto tipy ti pomôžu získať viac FPS v hrách:</p>
+        
+        <div class="boost-card">
+            <h3>1. Zapni Režim výkonu (Power Plan)</h3>
+            <p>V nastaveniach napájania vo Windowse si nastav "Vysoký výkon". Notebooky vtedy idú naplno!</p>
+        </div>
+
+        <div class="boost-card">
+            <h3>2. Vyčisti dočasné súbory</h3>
+            <p>Stlač <strong>Win + R</strong>, napíš <code>%temp%</code> a všetko v priečinku vymaž. Uvoľní to RAM a disk.</p>
+        </div>
+
+        <div class="boost-card">
+            <h3>3. Herný režim (Game Mode)</h3>
+            <p>V nastaveniach Windowsu zapni "Game Mode". Systém vtedy obmedzí procesy na pozadí.</p>
+        </div>
+
+        <div class="boost-card" style="border-left: 5px solid #76b900;"> <h3>4. Aktualizujte ovládače grafiky</h3>
+            <p>Vždy maj najnovšie ovládače. Stiahni si <strong>NVIDIA App</strong> alebo <strong>AMD Radeon Software</strong>. Nové ovládače opravujú chyby a zvyšujú výkon v hrách.</p>
+        </div>
+
+        <div class="boost-card" style="border-left: 5px solid #ff4b00;"> <h3>5. Optimalizujte hry v aplikácii</h3>
+            <p>V NVIDIA App alebo AMD softvéri (v sekcii Grafika) si dajte optimalizovať konkrétnu hru. Program automaticky nastaví detaily tak, aby ste mali čo najviac FPS.</p>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; color: #555;">
+        &copy; 2026 Lukasss895. Vytvorené pre komunitu😊.
     </footer>
 
 </body>
