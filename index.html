@@ -3,54 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Môj YouTube Kanál</title>
+    <title>Lukasss895 | Oficiálna stránka</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #181818; /* Tmavé pozadie ako na YT */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f0f;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 0;
         }
-        .container {
+
+        /* Navigácia */
+        nav {
+            background-color: #0f0f0f;
+            padding: 15px;
             text-align: center;
-            background-color: #212121;
-            padding: 50px;
-            border-radius: 15px;
-            box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #333;
+            z-index: 1000;
         }
-        h1 {
-            margin-bottom: 20px;
-        }
-        .sub-button {
-            background-color: #ff0000; /* YouTube červená */
-            color: white;
-            padding: 15px 30px;
+
+        nav a {
+            color: #aaa;
             text-decoration: none;
+            margin: 0 20px;
             font-weight: bold;
-            font-size: 1.2rem;
-            border-radius: 30px;
-            transition: background 0.3s;
-            display: inline-block;
+            transition: 0.3s;
         }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* Sekcie */
+        .section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Domov - Podľa tvojho YouTube */
+        .profile-pic {
+            width: 150px;
+            border-radius: 50%;
+            border: 3px solid #ff0000;
+        }
+
+        .sub-button {
+            background-color: #f00;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+
         .sub-button:hover {
             background-color: #cc0000;
+            transform: scale(1.05);
         }
+
+        /* Informácie o videách */
+        .video-box {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* PC Boost sekcia */
+        .boost-card {
+            background: linear-gradient(145deg, #1e1e1e, #252525);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            margin-bottom: 15px;
+            border-left: 5px solid #00c8ff;
+        }
+
+        hr { border: 0.5px solid #333; margin: 40px 0; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Vitaj na mojom kanáli!</h1>
-        <p>Ak sa ti páči moja tvorba, neváhaj ma podporiť.</p>
-        <br>
+    <nav>
+        <a href="#domov">DOMOV</a>
+        <a href="#info">INFORMÁCIE</a>
+        <a href="#boost">PC BOOST</a>
+    </nav>
+
+    <section id="domov" class="section">
+        <h1>Lukasss895</h1>
+        <p>@Lukasss895 • 43 odberateľov</p>
+        <p>Čaute všetci volám sa Lukáš. Môžete na mojom kanále nájsť hlavne CS:GO, Hororové hry a veľa ďalšieho!</p>
+        
         <a href="https://www.youtube.com/@Lukasss895?sub_confirmation=1" class="sub-button" target="_blank">
-            ODOBERAŤ
+            ODOBERAŤ (Sub)
         </a>
-    </div>
+    </section>
+
+    <hr>
+
+    <section id="info" class="section">
+        <h2>Kedy vyjde nové video?</h2>
+        <div class="video-box">
+            <p>Aktuálne pracujem na novom videu! Sledujte môj YouTube pre novinky.</p>
+            <p><strong>Najnovšie video:</strong></p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/TU_VLOZ_ID_VIDEA" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="boost" class="section">
+        <h2>Boost pre tvoj PC / Notebook</h2>
+        <p>Tieto tipy ti pomôžu získať viac FPS v hrách:</p>
+        
+        <div class="boost-card">
+            <h3>1. Zapni Režim výkonu (Power Plan)</h3>
+            <p>V nastaveniach napájania vo Windowse si nastav "Vysoký výkon". Notebooky vtedy idú naplno!</p>
+        </div>
+
+        <div class="boost-card">
+            <h3>2. Vyčisti dočasné súbory</h3>
+            <p>Stlač <strong>Win + R</strong>, napíš <code>%temp%</code> a všetko v priečinku vymaž. Uvoľní to RAM a disk.</p>
+        </div>
+
+        <div class="boost-card">
+            <h3>3. Herný režim (Game Mode)</h3>
+            <p>V nastaveniach Windowsu zapni "Game Mode". Systém vtedy obmedzí procesy na pozadí, aby si mal viac FPS.</p>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; color: #555;">
+        &copy; 2026 Lukasss895. Vytvorené pre komunitu.
+    </footer>
 
 </body>
 </html>
