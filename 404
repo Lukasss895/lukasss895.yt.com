@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Ups! Lukáš niečo opravuje</title>
+    <style>
+        body { background: #0d0d0d; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; text-align: center; }
+        .container { max-width: 500px; padding: 20px; }
+        .panacik { width: 250px; height: auto; margin-bottom: 20px; }
+        h1 { color: #ff4d4d; font-size: 2.5rem; margin-bottom: 15px; }
+        p { font-size: 1.2rem; color: #ccc; line-height: 1.6; }
+        .btn { display: inline-block; margin-top: 25px; padding: 12px 25px; background: #ff4d4d; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="tvoj_panacik.png" alt="Lukáš" class="panacik">
+        
+        <h1>Ups! Niečo spadlo...</h1>
+        <p>Táto stránka dočasne nefunguje pravdepodobne Lukáš niečo robí so stránkou :) alebo iba len spadla :(</p>
+        
+        <a href="index.html" class="btn">SPÄŤ NA HLAVNÚ STRÁNKU</a>
+    </div>
+</body>
+</html>
