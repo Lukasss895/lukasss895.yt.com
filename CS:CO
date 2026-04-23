@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>CS:CO Na stiahnutie | Lukasss895</title>
+    <style>
+        body { background: #0b0b0b; color: white; font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        .card { background: #161616; border: 2px solid #ff0000; border-radius: 20px; padding: 40px; max-width: 600px; margin: 0 auto; box-shadow: 0 0 30px rgba(255, 0, 0, 0.3); }
+        h1 { color: #ff0000; text-transform: uppercase; }
+        p { line-height: 1.6; color: #b0b0b0; }
+        .download-btn { display: inline-block; background: #ff0000; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; transition: 0.3s; text-transform: uppercase; }
+        .download-btn:hover { transform: scale(1.05); background: #e60000; box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
+        .back-link { display: block; margin-top: 30px; color: #888; text-decoration: none; font-weight: bold; }
+        .back-link:hover { color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🔥 CS:CO (Classic Offensive)</h1>
+        <h3>Čo je to za hru?</h3>
+        <p>
+            Counter-Strike: Classic Offensive je unikátna modifikácia, ktorá vracia pocit zo starej legendárnej 1.6-ky. 
+            Zachováva ikonické zbrane, zvuky a pohyb na stabilnom CS:GO Source engine. Žiadne zbytočné skiny, len čistá nostalgia a skill!
+        </p>
+        
+        <a href="https://gofile.io/d/TUJyr3" target="_blank" class="download-btn">📥 STIAHNUŤ HRU</a>
+        
+        <a href="index.html" class="back-link">← SPÄŤ NA HLAVNÚ STRÁNKU</a>
+    </div>
+
+</body>
+</html>
