@@ -13,15 +13,14 @@
         }
 
         body {
-            /* Písmo vrátené na pôvodné systémové */
             font-family: Arial, sans-serif;
             background-color: var(--dark-bg);
             color: white;
             margin: 0;
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
 
-        /* Moderná Navigácia */
         nav {
             background: rgba(10, 10, 10, 0.95);
             padding: 20px;
@@ -45,7 +44,6 @@
             color: var(--primary-red);
         }
 
-        /* Sekcie */
         .container {
             max-width: 1000px;
             margin: auto;
@@ -57,7 +55,6 @@
             text-align: center;
         }
 
-        /* Domov s červeným nádychom */
         .profile-header h1 {
             font-size: 3.5rem;
             margin-bottom: 10px;
@@ -86,7 +83,6 @@
             background-color: #e60000;
         }
 
-        /* Karty v sekciách */
         .card {
             background: var(--card-bg);
             border: 1px solid #222;
@@ -95,7 +91,6 @@
             margin-top: 30px;
         }
 
-        /* PC Boost styling */
         .boost-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -123,7 +118,6 @@
             font-size: 1.2rem;
         }
 
-        /* Responzivita */
         @media (max-width: 600px) {
             .profile-header h1 { font-size: 2.5rem; }
         }
@@ -132,18 +126,17 @@
 <body>
 
     <nav>
-        <a href="#domov">Domov</a>
+        <a href="index.html">Domov</a>
         <a href="#video">Novinky</a>
         <a href="#boost">PC Boost</a>
         <a href="#chat">Chat</a>
-        <a href="#CS:CO Na stiahnutie">CS:CO Na stiahnutie</a>
+        <a href="csco.html">CS:CO Na stiahnutie</a>
     </nav>
 
     <div class="container">
         <section id="domov" class="section profile-header">
             <h1>Lukasss895</h1>
             <p>@Lukasss895 • 43 odberateľov</p>
-            <p style="color: var(--text-gray); font-size: 1.2rem;"/p>
             <p>Čaute všetci! Na mojom kanále nájdete hlavne CS:GO, hororovky a kopec zábavy. Pridaj sa k našej komunite aj ty!</p>
             
             <a href="https://www.youtube.com/@Lukasss895?sub_confirmation=1" class="sub-button" target="_blank">
@@ -155,19 +148,20 @@
             <h2>Kedy vyjde video?</h2>
             <div class="card">
                 <p>Si smutný že nič nevychádza kukni aspoň toto nové videjko! A hlavne, sleduj môj YouTube, aby ti nič neušlo.</p>
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 15px; background: #000; margin: 20px 0;">
-  <div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
-    <div style="position: relative; width: 100%; max-width: 800px; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-        <iframe 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
-            src="https://www.youtube.com/embed/Od5LNH5uc7c" 
-            title="YouTube video player" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-        </iframe>
-    </div>
-</div>
-</div>
+                <div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
+                    <div style="position: relative; width: 100%; max-width: 800px; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <iframe 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                            src="https://www.youtube.com/embed/Od5LNH5uc7c" 
+                            title="YouTube video player" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="boost" class="section">
             <h2>Optimalizácia pre tvoj PC/NOTEBOOK</h2>
             <div class="boost-grid">
@@ -177,7 +171,7 @@
                 </div>
                 <div class="boost-item">
                     <h3>02. Temp súbory</h3>
-                    <p>Cez Win+R a %temp% vymaž nepotrebný odpad, ktorý spomaľuje tvoj disk (ak ti napíše že ten súbor chceš vymazať alebo nie daj vynechať pre bezpečie systému).</p>
+                    <p>Cez Win+R a %temp% vymaž nepotrebný odpad (vynechaj súbory, ktoré systém práve používa).</p>
                 </div>
                 <div class="boost-item">
                     <h3>03. Game Mode</h3>
@@ -193,52 +187,15 @@
                 </div>
             </div>
         </section>
-    </div>
-            <section id="chat" class="section">
-    <h2>Komunitný Chat</h2>
-   <iframe src="https://www5.cbox.ws/box/?boxid=962570&boxtag=cOJiU2" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
-        </p>
-    </div>
-</section>
-<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center; background: #0d0d0d; color: white; font-family: sans-serif; padding: 20px;">
-<!DOCTYPE html>
-<html lang="sk">
-<head>
-    <meta charset="UTF-8">
-    <title>CS:CO Na stiahnutie | Lukasss895</title>
-    <style>
-        body { background: #0b0b0b; color: white; font-family: sans-serif; text-align: center; padding: 50px; }
-        .card { background: #1a1a1a; border: 2px solid #ff4d4d; border-radius: 20px; padding: 40px; max-width: 600px; margin: 0 auto; box-shadow: 0 0 30px rgba(255, 77, 77, 0.3); }
-        h1 { color: #ff4d4d; }
-        p { line-height: 1.6; color: #ccc; }
-        .download-btn { display: inline-block; background: #ff4d4d; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
-        .download-btn:hover { transform: scale(1.1); background: #cc0000; }
-        .back-link { display: block; margin-top: 30px; color: #888; text-decoration: none; }
-    </style>
-</head>
-<body>
 
-    <div class="card">
-        <h1>🔥 CS:CO (Classic Offensive)</h1>
-        <h3>Čo je to za hru?</h3>
-        <p>
-            Counter-Strike: Classic Offensive je unikátna modifikácia, ktorá vracia pocit zo starej legendárnej 1.6-ky do modernejšieho kabáta. 
-            Zachováva ikonické zbrane, zvuky a pohyb na stabilnom engine. Žiadne zbytočné skiny, len čistý skill!
-        </p>
-        
-        <a href="TU_VLOZ_SVOJ_LINK" target="_blank" class="download-btn">📥 STIAHNUŤ HRU</a>
-        
-        <a href="index.html" class="back-link">← Späť na hlavnú stránku</a>
+        <section id="chat" class="section">
+            <h2>Komunitný Chat</h2>
+            <iframe src="https://www5.cbox.ws/box/?boxid=962570&boxtag=cOJiU2" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>   
+        </section>
     </div>
 
-</body>
-</html>
-    </p>
-</div>    
-  
-</div>
     <footer style="text-align: center; padding: 60px 20px; color: #444; font-size: 0.9rem;">
-        &copy; 2026 Lukasss895 | Vytvorené pre komunitu😊.
+        &copy; 2026 Lukasss895 | Vytvorené pre komunitu 😊.
     </footer>
 
 </body>
